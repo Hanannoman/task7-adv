@@ -13,7 +13,7 @@ export default function AboutPage() {
       <Hero
         title="Our team cares about your full relax"
         subtitle="But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness."
-        bgImage="/task7-adv/assets/heroabout.png" // ضعي صورة الهيرو الخاصة بالأبوت في مجلد public/images/
+        bgImage="assets/heroabout.png" // ضعي صورة الهيرو الخاصة بالأبوت في مجلد public/images/
       >
         {/* الزر الخاص بصفحة الأبوت المطابق لتصميم فيغما */}
         <Link
@@ -24,7 +24,7 @@ export default function AboutPage() {
         </Link>
       </Hero>
       <CardText
-        imageSrc="/task7-adv/assets/imageabout.png" // صورة الفتاة مع الخريطة الخاصة بالهوم
+        imageSrc="assets/imageabout.png" // صورة الفتاة مع الخريطة الخاصة بالهوم
         imageAlt="We are the center"
         isCustomShape={true}
         topTitle="WELCOME TO OUR SITE!"
@@ -40,10 +40,10 @@ To Offer You The Best"
       />
       <AboutFeature
         features={[
-          { iconSrc: "/task7-adv/assets/map.png", title: "Complete Packages For All Your Wishes" },
-          { iconSrc: "/task7-adv/assets/experience.png", title: "Over 30 Years Of Experience" },
-          { iconSrc: "/task7-adv/assets/expert.png", title: "Expert Guides For You" },
-          { iconSrc: "/task7-adv/assets/bestprice.png", title: "Guaranteed fun at the best price!" }
+          { iconSrc: "assets/map.png", title: "Complete Packages For All Your Wishes" },
+          { iconSrc: "assets/experience.png", title: "Over 30 Years Of Experience" },
+          { iconSrc: "assets/expert.png", title: "Expert Guides For You" },
+          { iconSrc: "assets/bestprice.png", title: "Guaranteed fun at the best price!" }
         ]}
       />
       <Testonomial />

@@ -102,7 +102,7 @@ export interface SpecialOffersSectionProps {
 export const bookNowData = {
   sectionTitle: "Book Now Bike",
   submitButtonText: "Book Now",
-  bikeImageSrc: "/task7-adv/assets/bike.png",
+  bikeImageSrc: "assets/bike.png",
   fields: [
     {
       id: 'name',

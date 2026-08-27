@@ -101,9 +101,9 @@ export default function Navbar({ logoSrc, navLinks, login, signup, logoarrow }: 
           isOpen={isLoginOpen}
           onClose={() => setIsLoginOpen(false)}
           onSwitchToSignup={() => alert('Switch to Signup clicked')}
-          logosign="/task7-adv/assets/close.png"
-          googleIconSrc="/task7-adv/assets/google.png"
-          eyeIconSrc="/task7-adv/assets/eyes.png"
+          logosign="assets/close.png"
+          googleIconSrc="assets/google.png"
+          eyeIconSrc="assets/eyes.png"
           title="Login"
           forgotPasswordText="Forgot your password?"
           submitButtonText="Sign In"
@@ -122,9 +122,9 @@ export default function Navbar({ logoSrc, navLinks, login, signup, logoarrow }: 
           isOpen={isSignupOpen}
           onClose={() => setIsSignupOpen(false)}
           onSwitchToLogin={() => alert('Switch to Login clicked')}
-          logosign="/task7-adv/assets/close.png"
-          googleIconSrc="/task7-adv/assets/google.png"
-          eyeIconSrc="/task7-adv/assets/eyes.png"
+          logosign="assets/close.png"
+          googleIconSrc="assets/google.png"
+          eyeIconSrc="assets/eyes.png"
           title="Create Account"
           submitButtonText="Sign Up"
           googleButtonText="Sign Up with Google"

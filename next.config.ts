@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/task7-adv', // تأكدي أن يكون نفس اسم مستودعك على غيت هاب تماماً
-  assetPrefix: '/task7-adv/',
+  basePath: isProd ? '/task7-adv' : '',
+  assetPrefix: isProd ? '/task7-adv/' : '',
   images: {
     unoptimized: true,
   },

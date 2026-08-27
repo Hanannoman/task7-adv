@@ -36,7 +36,7 @@ export default function Explore({ title }: ExploreProps) {
             onClick={handlePrev}
             className="w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 cursor-pointer hover:bg-gray-50 transition relative overflow-hidden"
           >
-            <Image src="/task7-adv/assets/left.png" alt="Prev" width={12} height={12} className="object-contain" />
+            <Image src="assets/left.png" alt="Prev" width={12} height={12} className="object-contain" />
           </button>
 
 
@@ -44,7 +44,7 @@ export default function Explore({ title }: ExploreProps) {
             onClick={handleNext}
             className="w-9 h-9 rounded-full bg-[#F18A00] hover:bg-[#d97c00] flex items-center justify-center text-white cursor-pointer shadow-md transition relative overflow-hidden"
           >
-            <Image src="/task7-adv/assets/right.png" alt="Next" width={12} height={12} className="object-contain" />
+            <Image src="assets/right.png" alt="Next" width={12} height={12} className="object-contain" />
           </button>
         </div>
       </div>

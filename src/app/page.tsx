@@ -18,18 +18,18 @@ export default function HomePage() {
       <Hero
         title="Enjoy in the best way!"
         subtitle="Enjoy our services for your trip anytime"
-        bgImage="/task7-adv/assets/herohome.png"
+        bgImage="assets/herohome.png"
       >
         <Search
           publ="Public Tours"
           priv="Private Tours"
-          logobottom="/task7-adv/assets/arrowbottom.png"
-          search="/task7-adv/assets/search.png" />
+          logobottom="assets/arrowbottom.png"
+          search="assets/search.png" />
       </Hero>
 
       <Explore title="Explore Our Popular Destinantions " />
       <CardText
-        imageSrc="/task7-adv/assets/locationcard.png"
+        imageSrc="assets/locationcard.png"
         imageAlt="We are the best company"
         isCustomShape={true}
         topTitle="WELCOME TO OUR SITE!"
@@ -49,7 +49,7 @@ export default function HomePage() {
         buttonText="Contact Us"
         imageAlt="Traveler Tourist Woman"
 
-        imageSrc="/task7-adv/assets/stock.png"
+        imageSrc="assets/stock.png"
 
       />
       <Service />

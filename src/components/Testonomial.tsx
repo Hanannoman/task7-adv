@@ -20,17 +20,17 @@ export default function Testonomial({
     {
       name: "Lyod Gomez",
       comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure",
-      imageSrc: "/task7-adv/assets/loudy.png"
+      imageSrc: "assets/loudy.png"
     },
     {
       name: "Lyod Gomez",
       comment: "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure",
-      imageSrc: "/task7-adv/assets/loudy.png"
+      imageSrc: "assets/loudy.png"
     },
     {
       name: "Sarah Smith",
       comment: "This is a third testimonial added to test the slider functionality when clicking the arrows to navigate smoothly between items without changing any other structure.",
-      imageSrc: "/task7-adv/assets/loudy.png"
+      imageSrc: "assets/loudy.png"
     }
   ]
 }: TestimonialsSectionProps) {
@@ -68,14 +68,14 @@ export default function Testonomial({
               onClick={handlePrev}
               className="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-gray-50 cursor-pointer transition relative overflow-hidden"
             >
-              <Image src="/task7-adv/assets/left.png" alt="Prev" width={12} height={12} className="object-contain" />
+              <Image src="assets/left.png" alt="Prev" width={12} height={12} className="object-contain" />
             </button>
 
             <button
               onClick={handleNext}
               className="w-8 h-8 rounded-full bg-[#F18A00] flex items-center justify-center text-white cursor-pointer shadow-sm hover:bg-[#d97900] transition relative overflow-hidden"
             >
-              <Image src="/task7-adv/assets/right.png" alt="Next" width={12} height={12} className="object-contain" />
+              <Image src="assets/right.png" alt="Next" width={12} height={12} className="object-contain" />
             </button>
           </div>
         </div>

@@ -57,22 +57,22 @@ export default function SearchBar({ publ, priv, logobottom, search }: SearchProp
         <button
           onClick={() => setActiveTab('public')}
           className={`flex items-center space-x-[10px] px-4 py-2.5 rounded-t-xl font-semibold transition text-lg  font-[family-name:var(--font-open-sans)] ${activeTab === 'public'
-              ? 'bg-white backdrop-blur text-[#F18A00] shadow-md'
-              : 'bg-white/20 text-white/80 hover:bg-white/30'
+            ? 'bg-white backdrop-blur text-[#F18A00] shadow-md'
+            : 'bg-white/20 text-white/80 hover:bg-white/30'
             }`}
         >
-          <Image src="/task7-adv/assets/public.png" alt="Public" width={18} height={18} />
+          <Image src="assets/public.png" alt="Public" width={18} height={18} />
           <span>{publ}</span>
         </button>
 
         <button
           onClick={() => setActiveTab('private')}
           className={`flex items-center space-x-2 px-6 py-2.5 rounded-t-xl font-semibold transition text-sm  font-[family-name:var(--font-open-sans)] ${activeTab === 'private'
-              ? 'bg-white/40 backdrop-blur text-white shadow-md'
-              : 'bg-white/20 text-white/80 hover:bg-white/30'
+            ? 'bg-white/40 backdrop-blur text-white shadow-md'
+            : 'bg-white/20 text-white/80 hover:bg-white/30'
             }`}
         >
-          <Image src="/task7-adv/assets/private.png" alt="Private" width={20} height={20} />
+          <Image src="assets/private.png" alt="Private" width={20} height={20} />
           <span>{priv}</span>
         </button>
       </div>

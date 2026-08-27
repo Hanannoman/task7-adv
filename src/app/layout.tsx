@@ -71,7 +71,7 @@ export default function RootLayout({
     { label: 'Contact Us', href: '/contact' },
   ];
   const footerData = {
-    logoSrc: "/task7-adv/assets/logo.png",
+    logoSrc: "assets/logo.png",
     logoAlt: "Tuscany Logo",
     servicesTitle: "Services",
     services: [
@@ -95,15 +95,15 @@ export default function RootLayout({
     ],
     contactsTitle: "Contacts",
     contacts: [
-      { icon: "/task7-adv/assets/locationfooter.png", text: "Piazza Napoleone, Lucca, Tuscany" },
-      { icon: "/task7-adv/assets/phone.png", text: "+39 346 368 5708" },
-      { icon: "/task7-adv/assets/email.png", text: "italiainlimo@gmail.com" },
+      { icon: "assets/locationfooter.png", text: "Piazza Napoleone, Lucca, Tuscany" },
+      { icon: "assets/phone.png", text: "+39 346 368 5708" },
+      { icon: "assets/email.png", text: "italiainlimo@gmail.com" },
     ],
     socialTitle: "Social Media",
     socialLinks: [
-      { icon: "/task7-adv/assets/twitter.png", href: "#", alt: "Twitter" },
-      { icon: "/task7-adv/assets/facebook.png", href: "#", alt: "Facebook" },
-      { icon: "/task7-adv/assets/instagram.png", href: "#", alt: "Instagram" },
+      { icon: "assets/twitter.png", href: "#", alt: "Twitter" },
+      { icon: "assets/facebook.png", href: "#", alt: "Facebook" },
+      { icon: "assets/instagram.png", href: "#", alt: "Instagram" },
     ],
     copyrightText: "Copyright © 2022. All rights reserved.",
   };
@@ -112,11 +112,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${openSans.variable} ${podcast.variable}`}>
         <Navbar
-          logoSrc="/task7-adv/assets/logo.png"
+          logoSrc="assets/logo.png"
           navLinks={mainNavLinks}
           signup="Sign Up"
           login="Login"
-          logoarrow="/task7-adv/assets/arrowbottom.png"
+          logoarrow="assets/arrowbottom.png"
         />
         {children}
         <Footer {...footerData} />
