@@ -20,9 +20,9 @@ export default function Navbar({ logoSrc, navLinks, login, signup, logoarrow }: 
   return (
     <>
       <header className="w-full px-6 sm:px-10 lg:px-[250px] py-6 sm:py-[60px] flex items-center justify-between absolute top-0 left-0 z-50 bg-white/20">
-       
+
         <Link href="/">
-          <Image 
+          <Image
             src={logoSrc}
             alt="Tuscany Logo"
             width={100}
@@ -31,25 +31,24 @@ export default function Navbar({ logoSrc, navLinks, login, signup, logoarrow }: 
           />
         </Link>
 
-          <nav className="hidden lg:flex items-center space-x-[40px] text-white font-[family-name:var(--font-open-sans)] font-semibold text-xl">
+        <nav className="hidden lg:flex items-center space-x-[40px] text-white font-[family-name:var(--font-open-sans)] font-semibold text-xl">
           {navLinks.map((link, index) => (
-            <Link 
-              key={index} 
-              href={link.href} 
+            <Link
+              key={index}
+              href={link.href}
               onClick={() => setActiveLink(link.href)}
-              className={`hover:text-amber-400 transition pb-1 ${
-                activeLink === link.href ? 'border-b-2 border-[#FA8B02]' : ''
-              }`}
+              className={`hover:text-amber-400 transition pb-1 ${activeLink === link.href ? 'border-b-2 border-[#FA8B02]' : ''
+                }`}
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-    
+
         <div className="flex items-center space-x-2 sm:space-x-4">
           <div className="relative">
-            <button 
+            <button
               onClick={() => setIsLangOpen(!isLangOpen)}
               className="flex text-white/60 hover:text-amber-400 font-semibold font-[family-name:var(--font-open-sans)] items-center transition text-sm sm:text-base"
             >
@@ -81,14 +80,14 @@ export default function Navbar({ logoSrc, navLinks, login, signup, logoarrow }: 
             )}
           </div>
 
-          <button 
+          <button
             onClick={() => setIsLoginOpen(true)}
             className="text-white hover:text-amber-400 font-semibold px-2 sm:px-[10px] py-2 transition text-sm sm:text-base"
           >
             {login}
           </button>
 
-          <button 
+          <button
             onClick={() => setIsSignupOpen(true)}
             className="bg-[#FA8B02] hover:bg-amber-600 text-white font-[family-name:var(--font-open-sans)] font-semibold px-4 sm:px-6 py-2 rounded-full shadow-lg transition text-sm sm:text-base"
           >
@@ -98,13 +97,13 @@ export default function Navbar({ logoSrc, navLinks, login, signup, logoarrow }: 
       </header>
 
       {isLoginOpen && (
-        <LoginModal 
+        <LoginModal
           isOpen={isLoginOpen}
           onClose={() => setIsLoginOpen(false)}
           onSwitchToSignup={() => alert('Switch to Signup clicked')}
-          logosign="/assets/close.png"
-          googleIconSrc="/assets/google.png"
-          eyeIconSrc="/assets/eyes.png"
+          logosign="/task7-adv/assets/close.png"
+          googleIconSrc="/task7-adv/assets/google.png"
+          eyeIconSrc="/task7-adv/assets/eyes.png"
           title="Login"
           forgotPasswordText="Forgot your password?"
           submitButtonText="Sign In"
@@ -119,13 +118,13 @@ export default function Navbar({ logoSrc, navLinks, login, signup, logoarrow }: 
       )}
 
       {isSignupOpen && (
-        <SignupModal 
+        <SignupModal
           isOpen={isSignupOpen}
           onClose={() => setIsSignupOpen(false)}
           onSwitchToLogin={() => alert('Switch to Login clicked')}
-          logosign="/assets/close.png"
-          googleIconSrc="/assets/google.png"
-          eyeIconSrc="/assets/eyes.png"
+          logosign="/task7-adv/assets/close.png"
+          googleIconSrc="/task7-adv/assets/google.png"
+          eyeIconSrc="/task7-adv/assets/eyes.png"
           title="Create Account"
           submitButtonText="Sign Up"
           googleButtonText="Sign Up with Google"

@@ -7,9 +7,9 @@ export interface NavItem {
 export interface NavbarProps {
   logoSrc: string;
   navLinks: NavItem[];
-  login:string ;
-  signup:string;
-  logoarrow:string
+  login: string;
+  signup: string;
+  logoarrow: string
 }
 export interface HeroProps {
   title: string;
@@ -17,12 +17,11 @@ export interface HeroProps {
   bgImage: string;
   children?: React.ReactNode; // لتمرير شريط البحث أو الزر بحسب الصفحة
 }
-export interface SearchProps
-{
-  publ:string;
-  priv:string;
-  logobottom:string;
-  search:string
+export interface SearchProps {
+  publ: string;
+  priv: string;
+  logobottom: string;
+  search: string
 }
 export interface CommonCardProps {
   image: string;
@@ -36,10 +35,10 @@ export interface CommonCardProps {
   onBook?: () => void;
   imageHeight?: string; // للتحكم بارتفاع الصورة حسب القسم
   cardHeight?: string;
- 
+
 }
 
- export const popularTours = [
+export const popularTours = [
   {
     image: '/assets/rectangle1-1.png',
     title: 'Lucca Bike Tour',
@@ -73,15 +72,15 @@ export interface CommonCardProps {
     description: 'Visit the beautiful Siena and the cities that surround it to experience...'
   }
 ];
- export interface ExploreProps{
-  title:string
+export interface ExploreProps {
+  title: string
 }
- export interface StatItem {
+export interface StatItem {
   number: string;
   label: string;
 }
 
- export interface AboutCompanySectionProps {
+export interface AboutCompanySectionProps {
   imageSrc: string;
   imageAlt: string;
   imageWidth?: string;
@@ -93,60 +92,60 @@ export interface CommonCardProps {
   stats: StatItem[];
 }
 
- export interface SpecialOffersSectionProps {
+export interface SpecialOffersSectionProps {
   title: string;
   description: string;
   buttonText: string;
   imageSrc: string;
   imageAlt: string;
 }
- export const bookNowData = {
-    sectionTitle: "Book Now Bike",
-    submitButtonText: "Book Now",
-    bikeImageSrc: "/assets/bike.png",
-    fields: [
-      { 
-        id: 'name', 
-        label: 'Name and Surname', 
-        type: 'text' as const, 
-        placeholder: 'Enter your name and surname' 
-      },
-      { 
-        id: 'email', 
-        label: 'Email Address', 
-        type: 'email' as const, 
-        placeholder: 'Enter your email address' 
-      },
-      { 
-        id: 'phone', 
-        label: 'Telephone Number', 
-        type: 'tel' as const, 
-        placeholder: 'Enter your telephone number' 
-      },
-      { 
-        id: 'service', 
-        label: 'Service Type', 
-        type: 'select' as const, 
-        options: ['Select the service types', 'Bike and rickshaw rental', 'Guided tour'] 
-      },
-      { 
-        id: 'date', 
-        label: 'Date', 
-        type: 'text' as const, 
-        placeholder: 'Select the date', 
-        icon: '/assets/date.png' 
-      },
-      { 
-        id: 'time', 
-        label: 'Time', 
-        type: 'text' as const, 
-        placeholder: 'Select the time', 
-        icon: '/assets/time.png' 
-      },
-    ],
-  };
+export const bookNowData = {
+  sectionTitle: "Book Now Bike",
+  submitButtonText: "Book Now",
+  bikeImageSrc: "/task7-adv/assets/bike.png",
+  fields: [
+    {
+      id: 'name',
+      label: 'Name and Surname',
+      type: 'text' as const,
+      placeholder: 'Enter your name and surname'
+    },
+    {
+      id: 'email',
+      label: 'Email Address',
+      type: 'email' as const,
+      placeholder: 'Enter your email address'
+    },
+    {
+      id: 'phone',
+      label: 'Telephone Number',
+      type: 'tel' as const,
+      placeholder: 'Enter your telephone number'
+    },
+    {
+      id: 'service',
+      label: 'Service Type',
+      type: 'select' as const,
+      options: ['Select the service types', 'Bike and rickshaw rental', 'Guided tour']
+    },
+    {
+      id: 'date',
+      label: 'Date',
+      type: 'text' as const,
+      placeholder: 'Select the date',
+      icon: '/assets/date.png'
+    },
+    {
+      id: 'time',
+      label: 'Time',
+      type: 'text' as const,
+      placeholder: 'Select the time',
+      icon: '/assets/time.png'
+    },
+  ],
+};
 
-   export interface FormField {
+export interface FormField {
   id: string;
   label: string;
   type: 'text' | 'email' | 'tel' | 'select';
@@ -155,21 +154,21 @@ export interface CommonCardProps {
   options?: string[];
 }
 
- export interface BookNowSectionProps {
+export interface BookNowSectionProps {
   sectionTitle: string;
   submitButtonText: string;
   bikeImageSrc: string;
   fields: FormField[];
 }
 
- export interface FieldConfig {
+export interface FieldConfig {
   name: string;
   label: string;
   type: string;
   placeholder: string;
 }
 
- export interface LoginModalProps {
+export interface LoginModalProps {
   isOpen: boolean;
   logosign: string;
   googleIconSrc: string;
@@ -184,12 +183,12 @@ export interface CommonCardProps {
   onClose: () => void;
   onSwitchToSignup: () => void;
 }
- export interface PackageFeature {
+export interface PackageFeature {
   icon: string;
   text: string;
 }
 
- export interface PackageCardProps {
+export interface PackageCardProps {
   title: string;
   price: string | number;
   image: string;

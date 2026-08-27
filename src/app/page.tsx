@@ -15,21 +15,21 @@ import { bookNowData } from "@/components/types";
 export default function HomePage() {
   return (
     <main className="relative min-h-screen">
-      <Hero 
-        title="Enjoy in the best way!" 
+      <Hero
+        title="Enjoy in the best way!"
         subtitle="Enjoy our services for your trip anytime"
-        bgImage="/assets/herohome.png" 
+        bgImage="/task7-adv/assets/herohome.png"
       >
-  <Search
-  publ="Public Tours"
-  priv="Private Tours"
-  logobottom="/assets/arrowbottom.png"
-  search="/assets/search.png"/>
+        <Search
+          publ="Public Tours"
+          priv="Private Tours"
+          logobottom="/task7-adv/assets/arrowbottom.png"
+          search="/task7-adv/assets/search.png" />
       </Hero>
 
-      <Explore title="Explore Our Popular Destinantions "/>
-            <CardText 
-        imageSrc="/assets/locationcard.png" 
+      <Explore title="Explore Our Popular Destinantions " />
+      <CardText
+        imageSrc="/task7-adv/assets/locationcard.png"
         imageAlt="We are the best company"
         isCustomShape={true}
         topTitle="WELCOME TO OUR SITE!"
@@ -43,22 +43,22 @@ export default function HomePage() {
         ]}
 
       />
-          <SpecialOffers
-          title ="Get Special Offers for Organizations" 
-            description = "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
-              buttonText = "Contact Us"
-                imageAlt = "Traveler Tourist Woman"
+      <SpecialOffers
+        title="Get Special Offers for Organizations"
+        description="Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s."
+        buttonText="Contact Us"
+        imageAlt="Traveler Tourist Woman"
 
-        imageSrc="/assets/stock.png" 
-      
+        imageSrc="/task7-adv/assets/stock.png"
+
       />
-       <Service/>
-                <BookNowSection {...bookNowData} />
-                <PackagesSection title="The Most Popular Packages"/>
-           <Testonomial />
-          
-        
-           
+      <Service />
+      <BookNowSection {...bookNowData} />
+      <PackagesSection title="The Most Popular Packages" />
+      <Testonomial />
+
+
+
     </main>
   );
 }
